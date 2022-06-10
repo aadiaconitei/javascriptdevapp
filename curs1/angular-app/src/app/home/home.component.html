@@ -1,0 +1,45 @@
+<h2>{{ title }}</h2>
+<p>home works!</p>
+<ul>
+    <li> Id: {{ users.id }}</li>
+    <li>Nume: {{users.nume }}</li>
+
+</ul>
+<h2>My Demo users</h2>
+<ul class="users">
+    <li *ngFor="let user of usersDemo">
+        <button [class.selected]="user === selectedUser" type="button" (click)="onSelect(user)">
+            <span class="badge">{{user.id}}</span>
+            <span class="name">{{user.nume}}</span>
+        </button>
+    </li>
+</ul>
+
+<div *ngIf="selectedUser">
+    <h2>{{selectedUser.nume | uppercase}} Detalii</h2>
+    <div>id: {{selectedUser.id}}</div>
+    <div>
+      <label for="hero-name">User nume: </label>
+      <input id="hero-name" [(ngModel)]="selectedUser.nume" placeholder="name">
+    </div>
+  </div>
+
+  <h2>{{ titlulHome }}</h2>
+<p [style.color]='color'>{{ descriere }}</p>
+<p>{{ 1+1 }} </p>
+<p>{{ heroes[0].name }}</p>
+<img [src]='image' alt="{{ heroes[0].name }} ">
+
+<img  *ngIf ='showImage' [src]='image' [alt]='alt'>
+
+<button (click) = 'afiseazaImagine()'> Afiseaza/Ascunde Imagine</button>
+
+<input type="text" [(ngModel)]="nume">
+<br>
+{{ nume }}
+
+<ul>
+    <li *ngFor='let  hero of heroes; let i = index'>
+        {{ i }} {{ hero.name}}
+    </li>
+</ul>
