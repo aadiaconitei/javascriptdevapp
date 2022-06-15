@@ -104,3 +104,16 @@ npm install popper.js --save
 npm install
 ng serve 
 ```
+# 17. Adaugam functionalitati noi
+```
+ng g c navbar
+ng g c footer
+ng g c profil
+ng g c home
+```
+### Adaugam navbar si footer in app.componemt.html
+```
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+```
