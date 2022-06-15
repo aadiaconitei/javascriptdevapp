@@ -117,3 +117,6 @@ ng g c home
 <router-outlet></router-outlet>
 <app-footer></app-footer>
 ```
+
+### Definim rutele in app-routing.module.ts
+
