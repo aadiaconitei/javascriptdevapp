@@ -120,3 +120,8 @@ ng g c home
 
 ### Definim rutele in app-routing.module.ts
 
+### Exportam proiectul
+```
+ng build --aot
+```
+
