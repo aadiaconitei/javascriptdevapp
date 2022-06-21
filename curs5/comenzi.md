@@ -18,3 +18,7 @@ npm start
 ```
 npm run build
 ```
+### Adaugam rutele
+```
+npm i -D react-router-dom@latest
+```
