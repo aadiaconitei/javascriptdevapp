@@ -1,13 +1,14 @@
 ```
 npm i -g @vue/cli
 vue --version
+npm list vue
 
 vue create frontend
  // select Vue 3
 cd frontend
 npm run serve
 
-npm run build
+npm run builds
 
 npm install --save vue-router axios 
 npm install --save bootstrap

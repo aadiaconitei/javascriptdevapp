@@ -21,7 +21,9 @@ const routes =  [
     path: "/add",
     name: "add",
     component: () => import("./components/AddUser")
-  }
+  },
+  //{ path: '*', component: () => import("./components/NotFound")}
+  //* se potriveste cu toate rutele (e precum default din switch, sau ultimul else)
 ];
 const router = createRouter({
   history: createWebHistory(),
