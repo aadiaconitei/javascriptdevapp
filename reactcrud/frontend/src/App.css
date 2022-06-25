@@ -10,14 +10,17 @@
   color: #ffffff;
   }
   
-  .form-wrapper,
-  .table-wrapper {
-  max-width: 500px;
-  margin: 0 auto;
-  }
   
   .table-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  .form-wrapper {
   max-width: 700px;
+  margin: 0 auto;
+  }
+  .table-wrapper {
+  max-width: 1200px;
   }
   
   .edit-link {

@@ -76,6 +76,7 @@ export const update = (user: User, callback: Function) => {
     if (err) {
       callback(err);
     }
+    console.log('sunt aici',result);
     callback(null);
   });
 };

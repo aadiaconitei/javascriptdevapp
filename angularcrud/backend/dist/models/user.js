@@ -69,6 +69,7 @@ const update = (user, callback) => {
         if (err) {
             callback(err);
         }
+        console.log('sunt aici', result);
         callback(null);
     });
 };

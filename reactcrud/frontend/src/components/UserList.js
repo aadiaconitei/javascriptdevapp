@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Table } from "react-bootstrap";
 import UserTableRow from "./UserTableRow";
-
+import configData  from "../config.json";
 const UserList = () => {
 const [users, setUsers] = useState([]);
 
 useEffect(() => {
 	axios
-	.get("http://localhost:4000/users/")
+	.get(configData.SERVER_URL)
 	.then(({ data }) => {
-		setUsers(data);
+		setUsers(data['data']);
 	})
 	.catch((error) => {
 		console.log(error);
@@ -32,6 +32,8 @@ return (
 			<th>Prenume</th>
 			<th>Email</th>
 			<th>Telefon</th>
+			<th>Data nastere</th>
+			<th>Data adaugare</th>
 		</tr>
 		</thead>
 		<tbody>{DataTable()}</tbody>

@@ -18,8 +18,9 @@ const UserForm = (props) => {
             .min(10, 'De lungime 10')
             .max(10, 'De lungime 10')
             .required("Camp obligatoriu!"),
+        datanastere: Yup.string().required("Camp obligatoriu!"),
     });
-    console.log(props);
+    //console.log(props);
     return (
         <div className="form-wrapper">
             <Formik {...props} validationSchema={validationSchema}>
@@ -74,6 +75,8 @@ const UserForm = (props) => {
                             component="span"
                         />
                     </FormGroup>
+                    <Field name="id" type="hidden"
+                            className="form-control" />
                     <Button variant="danger" size="lg" className="mt-3"
                         block="block" type="submit">
                         {props.children}
