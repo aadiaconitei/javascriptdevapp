@@ -36,3 +36,8 @@ EditUser.js
 - definim meniul si rutele respective
 
 ### Edit App.css
+
+### La final
+```
+npm run build
+```
