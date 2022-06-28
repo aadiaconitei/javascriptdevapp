@@ -18,8 +18,8 @@ class UserService {
 //   deleteAll() {
 //     return http.delete(`/users`);
 //   }
-//   findByName(nume) {
-//     return http.get(`/users?name=${nume}`);
-//   }
+  findByName(name) {
+    return http.get(`/users/${name}`);
+  }
 }
 export default new UserService();

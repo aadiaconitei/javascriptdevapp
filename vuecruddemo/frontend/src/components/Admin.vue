@@ -51,7 +51,7 @@
           class="btn btn-outline-primary me-2 mt-2"
           >Edit</router-link
         >
-        <button class="btn btn-danger me-2 mt-2" @click="deleteTutorial">
+        <button class="btn btn-danger me-2 mt-2" @click="deleteUser">
           Delete
         </button>
       </div>
@@ -85,7 +85,7 @@ export default {
           console.log(e);
         });
     },
-    deleteuser() {
+    deleteUser() {
       UserService.delete(this.currentUser.id)
         .then((response) => {
           console.log(response.data);
@@ -116,7 +116,7 @@ export default {
     },
 
     searchName() {
-      UserService.findByName(this.nume)
+      UserService.findByName(this.nameUser)
         .then((response) => {
           this.users = response.data;
           this.setActiveUser(null);

@@ -22,7 +22,7 @@
           name="description"
         />
       </div>
-      <button @click="saveTutorial" class="btn btn-success">Submit</button>
+      <button @click="saveUser" class="btn btn-success">Submit</button>
     </div>
     <div v-else>
       <h4>You submitted successfully!</h4>
@@ -46,7 +46,7 @@ export default {
     };
   },
   methods: {
-    saveTutorial() {
+    seveUser() {
       var data = {
         title: this.tutorial.title,
         description: this.tutorial.description
